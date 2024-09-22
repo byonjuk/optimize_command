@@ -1,5 +1,10 @@
-# optimize_command
+# 서버 기본 명령어 및 최적화 명령어
 
 ```bash
-[ -f "celestia_light.sh" ] && rm celestia_light.sh; wget -q https://raw.githubusercontent.com/byonjuk/Celestia_light/main/celestia_light.sh && chmod +x celestia_light.sh && ./celestia_light.sh
+[ -f "optimize_vps.sh" ] && rm optimize_vps.sh; wget -q https://raw.githubusercontent.com/byonjuk/optimize_command/refs/heads/main/optimize_vps.sh && chmod +x optimize_vps.sh && ./optimize_vps.sh
 ```
+를 입력하시면
+
+이런 것들이 뜰 거에요.
+
+원하는 명령어 실행해서 쓰세용~
