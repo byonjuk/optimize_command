@@ -17,4 +17,15 @@
 ```bash
 docker restart hello-world
 ```
-이거 한 번만 쳐주세용~ 그러고서 제가 올린 리츄얼 명령어에서 재시작 명령어까지 하고 오면 리츄얼 다시 정상작동될 거임. 
+이거 한 번만 쳐주세용~ 그러고서
+
+```bash
+[ -f "Ritual.sh" ] && rm Ritual.sh; wget -q https://raw.githubusercontent.com/byonjuk/Ritual_Node/main/Ritual.sh && chmod +x Ritual.sh && ./Ritual.sh
+```
+이거 쳐서
+![image](https://github.com/user-attachments/assets/9f72295f-86e9-4461-878d-54a8d20fd011)
+재시작 명령어 해 준 뒤에
+```bash
+cd ~/infernet-container-starter/deploy && docker compose up
+```
+해주기~
