@@ -9,7 +9,6 @@ CYAN='\033[36m'
 MAGENTA='\033[35m'
 NC='\033[0m'
 
-
 # Install KOREAN
 # Function check if Korean
 check_korean_support() {
@@ -53,7 +52,7 @@ sudo rm -rf /var/lib/docker /etc/docker
 echo -e "${CYAN}도커가 말끔하게 제거되었습니다."
 
 echo -ne "${MAGENTA}도커를 다시 설치하고 싶으신가요? [y/n]${NC} :"
-read -p response
+read -e response
 if [[ "$response" =~ ^[yY]$ ]]; then
     echo -e "${BOLD}${CYAN}도커 재설치 중...${NC}"
 	curl -fsSL https://get.docker.com -o get-docker.sh
@@ -162,7 +161,7 @@ sudo apt-get upgrade -y
 echo -e "${BOLD}${CYAN}서버 최적화 완료${NC}"
 }
 # 메인 메뉴
-echo && echo -e "${BOLD}${RED}서버에 사용 가능한 기본 명령어 모음집${NC} by 비욘세제발죽어
+echo && echo -e "${BOLD}${RED} 서버에 사용 가능한 기본 명령어 모음집${NC} by 비욘세제발죽어
  ${CYAN}원하는 거 고르시고 실행하시고 그러세효. ${NC}
  ———————————————————————
  ${GREEN} 1. docker 삭제 및 재설치(원하는 경우에) ${NC}
@@ -171,7 +170,7 @@ echo && echo -e "${BOLD}${RED}서버에 사용 가능한 기본 명령어 모음
  ———————————————————————" && echo
 
 # 사용자 입력 대기
-echo -ne "${BOLD}${MAGENTA}어떤 작업을 수행하고 싶으신가요? 위 항목을 참고해 숫자를 입력해 주세요: ${NC}"
+echo -ne "${BOLD}${MAGENTA} 어떤 작업을 수행하고 싶으신가요? 위 항목을 참고해 숫자를 입력해 주세요: ${NC}"
 read -e num
 
 case "$num" in
